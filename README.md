@@ -4,3 +4,19 @@
 # Circuit Diagram
 ![image](https://github.com/RESMIRNAIR/HALF_SUBTRACTOR/assets/154305926/df70da69-5a12-4a0d-ab84-a98dad3f7e70)
 ![image](https://github.com/RESMIRNAIR/HALF_SUBTRACTOR/assets/154305926/2f2d6a4d-9eda-4165-8579-1d7490b5fe97)
+
+# Program
+```
+module half_subtractor(a,b,diff,borr);
+input a,b;
+output diff,borr;
+wire x;
+xor (diff,a,b);
+not (x,a);
+and (borr,x,b);
+endmodule
+
+```
+
+# Output
+![316434070-646f69a7-af2b-4ea3-88f3-a42624f80747](https://github.com/Vijayananthperumal22/HALF_SUBTRACTOR/assets/107705127/46dc5529-604e-4874-83e1-a42d3115b4a6)
